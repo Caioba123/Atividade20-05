@@ -1,0 +1,127 @@
+1 Quesito
+
+import java.util.Scanner;
+public class Atv20 {
+    public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Ola, Bom Dia");
+		System.out.println("Coloque um valor inteiro");
+		int valor1 = teclado.nextInt();
+		System.out.println("Coloque outro valor inteiro");
+		int valor2 = teclado.nextInt();
+                
+                if (valor1 == valor2) {
+                    System.out.println("Os valores sao iguais");
+                } else {       
+                     System.out.println("Os valores sao diferentes");
+                }
+                
+                 if (valor1 >= valor2) {
+                    System.out.println("Os valores sao iguais");
+                } else {       
+                     System.out.println("Os valores sao diferentes");
+                }
+                 
+                   if (valor2 <= valor1) {
+                    System.out.println("Os valores sao iguais");
+                } else {       
+                     System.out.println("Os valores sao diferentes");
+                }
+                   
+                   
+                   if (valor2 < valor1) {
+                    System.out.println("Os valores sao diferentes");
+                } else {       
+                     System.out.println("Os valores sao iguais");
+                }
+                      
+                    if (valor1 < valor2) {
+                    System.out.println("Os valores sao iguais");
+                } else {       
+                     System.out.println("Os valores sao diferentes");
+                }
+                    
+                     if (valor1 <= valor2) {
+                    System.out.println("Os valores sao iguais");
+                } else {       
+                     System.out.println("Os valores sao diferentes");
+                }
+	}
+
+}
+
+
+2 Quesito
+
+import java.util.Scanner;
+public class Atv20 {
+    public static void main(String[] args) {
+		Scanner tec = new Scanner(System.in);
+		System.out.println("Ola, Bom Dia");
+                System.out.println("Escreva um numero inteiro (1, 2 ou 3)");
+                int codigo = tec.nextInt();
+          
+                switch (codigo) {
+                    case 1:
+                    System.out.println("Um");    
+                    break;
+                    case 2:
+                    System.out.println("Dois");    
+                    break;
+                    case 3:
+                    System.out.println("Tres");    
+                    break;
+                }
+          
+              
+	}
+
+}
+
+3 Quesito
+
+import java.util.Scanner;
+public class Atv20 {
+    public static void main(String[] args) {
+		Scanner tec = new Scanner(System.in);
+		System.out.println("Ola, Bom Dia");
+                System.out.println("Escreva o valor do carro");
+                int valorCarro = tec.nextInt();
+                
+                double distribuidor = 0.28;
+                double imposto = 0.45;
+                double total = valorCarro * distribuidor * imposto;
+                
+                System.out.println("O valor do carro e de " + valorCarro + " Reais ,e o valor dele com impostos e distribuidor sera de " + total + "Reais");
+                
+                
+                
+                
+	}
+
+}
+
+
+
+4 Quesito
+
+import java.util.Scanner;
+public class Atv20 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Deposite uma quantidade de dinheiro:");
+
+        double valor = scan.nextDouble();
+
+        System.out.println("Quanto voce quer sacar?");
+
+        double sacar = scan.nextDouble();
+
+        double taxa1 = valor * 0.05;
+        double taxa2 = taxa1 + sacar;
+        double saque = valor - taxa2;
+
+        System.out.println("Depois do saque seu valor na conta sera " + saque + " Reais.");
+    }
+}
